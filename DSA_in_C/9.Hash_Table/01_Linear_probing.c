@@ -1,7 +1,7 @@
 #include<stdio.h>
-#define SIZE 10
-#define FREE -1
-#define FULL -10
+#define FREE -1;
+#define FULL -100;
+#define SIZE 10;
 
 int HT[SIZE];
 
@@ -9,83 +9,49 @@ void init()
 {
 	for(int i=0;i<SIZE;i++)
 	{
-		HT[i]=FREE;
+		HT[i]=-1;
 	}
 }
-
-int hash(int data)
-{
-	int k,i;
-
-	k=data%SIZE;
-
-	if(HT[k]==FREE)
-	{
-		return k;
-	}
-	else
-	{
-		printf("For a Data %d Collision Occurs at %d \n",data,k);
-	}
-
-	i=(k+1)%SIZE;
-
-	while(i!=k)
-	{
-		if(HT[i]==FREE)
-		{
-			return i;
-		}
-		else
-		{
-			printf("For a Data %d Collision Occurs at %d \n",data,i);
-
-		}
-		i=(i+1)%SIZE;
-	}
-
-	return FULL;
-}
-
 
 void display()
 {
 	printf("Hash Table :\n");
 	for(int i=0;i<SIZE;i++)
 	{
-		printf("[%d]:%d\n",i,HT[i]);
+		printf("[%d] : %d \n",i,HT[i]);
+	
 	}
-	printf("\n");
+}
+int hash(int data)
+{
+	
+
 }
 
 int main()
 {
-	int n,data,k;
+	int n,i,data;
 	init();
-
-	printf("How many number you want to Store :");
-	scanf("%d",&n);
-
+	
+	printf("How many Value you want to accept :");
+	scanf("%d\n",&n);
+	
 	for(int i=0;i<n;i++)
 	{
-		printf("Enter the Data :");
-		scanf("%d",&data);
-
+		printf("Enter the data :");
+		scanf("%d\n",&data);
+		
 		k=hash(data);
-
 		if(k==FULL)
 		{
-			printf("No Space for a Data : %d \n",data);
+			printf("No Space avilabel to store ");
 		}
 		else
 		{
 			HT[k]=data;
 			printf("Data %d is added at key %d \n",data,k);
 		}
-
-		display();
 	}
-
 
 	return 0;
 }
