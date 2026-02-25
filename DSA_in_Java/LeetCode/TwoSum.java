@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class TwoSum 
 {
     public static int[] twoSum(int[] nums, int target) 
@@ -21,8 +23,8 @@ public class TwoSum
 
     public static void main(String[] args) 
     {
-        int[] nums = {2, 7, 11, 15};
-        int target = 9;
+        int[] nums = {3,2,4};
+        int target = 60;
         int[] result = twoSum(nums, target);
         
         if (result != null) {

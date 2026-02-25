@@ -10,6 +10,14 @@ public class ReverseNumber
         System.out.print("Enter the Number :");
         int num=sc.nextInt();
 
+        int sign=1;
+
+        if(num<0)
+        {
+            sign=-1;
+            num=-num;
+        }
+        
         int rev=0;
         while(num>0)
         {
@@ -17,6 +25,9 @@ public class ReverseNumber
             rev=rev*10+rem;
             num/=10;
         }
+
+        rev=rev*sign;
+
         System.out.println("Reverse Number :"+rev);
     }
 }
