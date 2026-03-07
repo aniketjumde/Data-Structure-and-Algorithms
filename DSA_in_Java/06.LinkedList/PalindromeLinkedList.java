@@ -16,7 +16,6 @@ class ListNode {
 
 public class PalindromeLinkedList {
 
-    // ===== Find Middle Node =====
     public ListNode findMid(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;
@@ -29,17 +28,16 @@ public class PalindromeLinkedList {
         return slow;
     }
 
-    // ===== Check Palindrome =====
     public boolean isPalindrome(ListNode head) {
 
         if (head == null || head.next == null) {
             return true;
         }
 
-        // 1️⃣ Find Mid
+        // 1️Find Mid
         ListNode mid = findMid(head);
 
-        // 2️⃣ Reverse second half
+        // 2️ Reverse second half
         ListNode prev = null;
         ListNode current = mid;
         ListNode next;
@@ -51,12 +49,13 @@ public class PalindromeLinkedList {
             current = next;
         }
 
-        // 3️⃣ Compare left & right
+        // 3️Compare left & right
         ListNode left = head;
         ListNode right = prev;
 
         while (right != null) {
-            if (left.val != right.val) {
+            if (left.val != right.val) 
+            {
                 return false;
             }
             left = left.next;
@@ -66,8 +65,8 @@ public class PalindromeLinkedList {
         return true;
     }
 
-    // ===== Print Linked List =====
-    public void print(ListNode head) {
+    public void print(ListNode head)
+    {
         ListNode temp = head;
         while (temp != null) {
             System.out.print(temp.val + " -> ");
@@ -76,7 +75,6 @@ public class PalindromeLinkedList {
         System.out.println("null");
     }
 
-    // ===== Main Method =====
     public static void main(String[] args) {
 
         PalindromeLinkedList obj = new PalindromeLinkedList();
