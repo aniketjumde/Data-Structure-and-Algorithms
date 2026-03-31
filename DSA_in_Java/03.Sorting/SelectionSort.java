@@ -32,9 +32,7 @@ public class SelectionSort
                     arr[j]=temp;
                 }
             }
-       }
-       
-
+       }       
         // Print sorted array
         System.out.println("Sorted Array:");
 
