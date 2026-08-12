@@ -1,52 +1,43 @@
-import java.util.*;
-
-public class SecondLargest 
+public class SecondLargest
 {
-    public static int getSecondLargest(int[] arr, int n) 
+    public static int getLargest(int arr[])
     {
-        if (n < 2) {
-            return -1;  
+        if(arr == null || arr.length<2)
+        {
+            return -1;
         }
 
-        int largest = Integer.MIN_VALUE;
-        int secondLargest = Integer.MIN_VALUE;
+        int largest=Integer.MIN_VALUE;
+        int secondLargest=Integer.MIN_VALUE;
 
-        for (int i = 0; i < n; i++) {
-            if (arr[i] > largest) {
-                secondLargest = largest;
-                largest = arr[i];
-            } 
-            else if (arr[i] > secondLargest && arr[i] < largest) 
+        for(int num:arr)
+        {
+            if(num>largest)
             {
-                secondLargest = arr[i];
+                secondLargest=largest;
+                largest=num;
+
+            }
+            else if(num>secondLargest && num!=largest)
+            {
+                secondLargest=num;
             }
         }
 
-        if (secondLargest == Integer.MIN_VALUE) {
-            return -1; 
-        }
 
-        return secondLargest;
+        return (secondLargest==Integer.MIN_VALUE)?-1:secondLargest;
     }
 
-    public static void main(String[] args) 
-    {
-        Scanner sc = new Scanner(System.in);
+     public static void main(String[] args) {
 
-        System.out.print("Enter size: ");
-        int n = sc.nextInt();
+        int arr[] = {12, 35, 1, 10, 34, 1};
 
-        int[] arr = new int[n];
+        int result = getLargest(arr);
 
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+        if (result == -1) {
+            System.out.println("Second Largest Element does not exist.");
+        } else {
+            System.out.println("Second Largest Element = " + result);
         }
-
-        int result = getSecondLargest(arr, n);
-
-        if (result == -1)
-            System.out.println("No second largest element");
-        else
-            System.out.println("Second largest: " + result);
     }
 }
