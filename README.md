@@ -7,6 +7,7 @@
 | ------- | ------- |
 | [0001-two-sum](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/0001-two-sum/) | Easy |
 | [0088-merge-sorted-array](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/0088-merge-sorted-array/) | Easy |
+| [3467-transform-array-by-parity](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/3467-transform-array-by-parity/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -23,4 +24,9 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0088-merge-sorted-array](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/0088-merge-sorted-array/) | Easy |
+| [3467-transform-array-by-parity](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/3467-transform-array-by-parity/) | Easy |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3467-transform-array-by-parity](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/3467-transform-array-by-parity/) | Easy |
 <!---LeetCode Topics End-->
