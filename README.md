@@ -11,6 +11,7 @@
 | [2037-minimum-number-of-moves-to-seat-everyone](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/2037-minimum-number-of-moves-to-seat-everyone/) | Easy |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [3467-transform-array-by-parity](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/3467-transform-array-by-parity/) | Easy |
+| [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/3512-minimum-operations-to-make-array-sum-divisible-by-k/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -21,6 +22,7 @@
 | ------- | ------- |
 | [0009-palindrome-number](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/0009-palindrome-number/) | Easy |
 | [2160-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/2160-minimum-sum-of-four-digit-number-after-splitting-digits/) | Easy |
+| [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/3512-minimum-operations-to-make-array-sum-divisible-by-k/) | Easy |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
