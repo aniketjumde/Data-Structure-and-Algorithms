@@ -8,6 +8,7 @@
 | [0001-two-sum](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/0001-two-sum/) | Easy |
 | [0088-merge-sorted-array](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/0088-merge-sorted-array/) | Easy |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy |
+| [2037-minimum-number-of-moves-to-seat-everyone](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/2037-minimum-number-of-moves-to-seat-everyone/) | Easy |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [3467-transform-array-by-parity](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/3467-transform-array-by-parity/) | Easy |
 ## Hash Table
@@ -29,6 +30,7 @@
 | ------- | ------- |
 | [0088-merge-sorted-array](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/0088-merge-sorted-array/) | Easy |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy |
+| [2037-minimum-number-of-moves-to-seat-everyone](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/2037-minimum-number-of-moves-to-seat-everyone/) | Easy |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [3467-transform-array-by-parity](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/3467-transform-array-by-parity/) | Easy |
 ## Counting
@@ -43,4 +45,9 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy |
+| [2037-minimum-number-of-moves-to-seat-everyone](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/2037-minimum-number-of-moves-to-seat-everyone/) | Easy |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2037-minimum-number-of-moves-to-seat-everyone](https://github.com/aniketjumde/Data-Structure-and-Algorithms/tree/main/2037-minimum-number-of-moves-to-seat-everyone/) | Easy |
 <!---LeetCode Topics End-->
