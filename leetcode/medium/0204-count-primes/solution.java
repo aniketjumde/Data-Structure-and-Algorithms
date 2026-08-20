@@ -6,25 +6,33 @@ class Solution {
             return 0;
         }
 
-        int count=0;
-        for(int j=2;j<n;j++)
+        boolean[] isPrime=new boolean[n];
+
+        for(int i=2;i<n;i++)
         {
-            boolean flag=true;
-            for(int i=2;i*i<=j;i++)
+            isPrime[i]=true;
+        }
+
+        for(int i=2;i*i<n;i++)
+        {
+            if(isPrime[i])
             {
-                if(j%i==0)
+                for(int j=i*i;j<n;j+=i)
                 {
-                    flag=false;
-                    break;
+                    isPrime[j]=false;
                 }
             }
+        }
 
-            if(flag)
+        int count=0;
+        for(int i=2;i<n;i++)
+        {
+            if(isPrime[i])
             {
                 count++;
             }
         }
 
-        return count;    
+        return count;
     }
 }
