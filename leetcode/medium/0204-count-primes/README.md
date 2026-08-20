@@ -42,9 +42,9 @@ Output: 0
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.9 MB  
-**Submitted:** 2026-08-20T05:55:38.598Z  
+**Runtime:** 810 ms (beats 5.03%)  
+**Memory:** 80.1 MB (beats 6.62%)  
+**Submitted:** 2026-08-20T06:06:49.136Z  
 
 ```java
 class Solution {
@@ -55,26 +55,34 @@ class Solution {
             return 0;
         }
 
-        int count=0;
-        for(int j=2;j<n;j++)
+        boolean[] isPrime=new boolean[n];
+
+        for(int i=2;i<n;i++)
         {
-            boolean flag=true;
-            for(int i=2;i*i<=j;i++)
+            isPrime[i]=true;
+        }
+
+        for(int i=2;i*i<n;i++)
+        {
+            if(isPrime[i])
             {
-                if(j%i==0)
+                for(int j=i*i;j<n;j+=i)
                 {
-                    flag=false;
-                    break;
+                    isPrime[j]=false;
                 }
             }
+        }
 
-            if(flag)
+        int count=0;
+        for(int i=2;i<n;i++)
+        {
+            if(isPrime[i])
             {
                 count++;
             }
         }
 
-        return count;    
+        return count;
     }
 }
 ```
