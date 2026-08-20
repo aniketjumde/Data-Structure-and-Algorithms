@@ -55,9 +55,9 @@ It is not required to do the modifications in-place.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.3 MB  
-**Submitted:** 2026-08-20T07:58:20.221Z  
+**Runtime:** 3 ms (beats 100.00%)  
+**Memory:** 175.7 MB (beats 28.75%)  
+**Submitted:** 2026-08-20T07:58:26.533Z  
 
 ```java
 class Solution {
