@@ -45,29 +45,43 @@ Output: 3
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms  
-**Memory:** 42.4 MB  
-**Submitted:** 2026-08-21T10:19:52.939Z  
+**Runtime:** 21 ms (beats 95.70%)  
+**Memory:** 76.1 MB (beats 99.63%)  
+**Submitted:** 2026-08-21T10:38:32.280Z  
 
 ```java
 class Solution {
-    public int longestConsecutive(int[] arr) 
-    {
-        
-        Arrays.sort(arr);
-        int x=arr[0];
-        int count=0;
-        for(int i=0;i<arr.length;i++)
-        {
-            if(x==arr[i])
-            {
-                count++;
-                x++;
+    public int longestConsecutive(int[] arr) {
 
-            }
+        if (arr.length == 0) {
+            return 0;
         }
 
-        return count;
+        Arrays.sort(arr);
+
+        int longest = 1;
+        int current = 1;
+
+        for (int i = 1; i < arr.length; i++) {
+
+            // Duplicate → ignore
+            if (arr[i] == arr[i - 1]) {
+                continue;
+            }
+
+            // Consecutive
+            if (arr[i] == arr[i - 1] + 1) {
+                current++;
+            }
+            // Sequence broken
+            else {
+                current = 1;
+            }
+
+            longest = Math.max(longest, current);
+        }
+
+        return longest;
     }
 }
 ```
