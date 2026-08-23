@@ -1,41 +1,33 @@
 class Solution {
     public int subarraysDivByK(int[] arr, int k) 
     {
-        int prefixSum = 0;
-        int longest = 0;
 
         Map<Integer, Integer> map = new HashMap<>();
-       
-        map.put(0, -1);
+        map.put(0, 1);
+        int sum = 0;
+        int count = 0;
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int num : arr) 
+        {
+            sum += num;
 
-            prefixSum += arr[i];
+            int rem = sum % k;
 
-            int rem = prefixSum % k;
-
-            // Handle negative remainder
             if (rem < 0) {
                 rem += k;
             }
 
-            if (map.containsKey(rem)) {
+            count += map.getOrDefault(rem, 0);
 
-                int length = i - map.get(rem);
-
-                longest = Math.max(longest, length);
-
-            } else {
-
-                // Store only earliest occurrence
-                map.put(rem, i);
-            }
+            map.put(rem, map.getOrDefault(rem, 0) + 1);
         }
 
+        return count;
 
 
 
-        return longest;
+
+
         // int currentLength=0;
 
         // for(int i=0;i<arr.length;i++)
