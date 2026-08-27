@@ -64,9 +64,9 @@ Explanation: In this example the resulting split of "|||" will contain only empt
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.3 MB  
-**Submitted:** 2026-08-27T06:07:29.643Z  
+**Runtime:** 4 ms (beats 98.70%)  
+**Memory:** 47.4 MB (beats 58.07%)  
+**Submitted:** 2026-08-27T06:07:34.298Z  
 
 ```java
 class Solution {
