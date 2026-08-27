@@ -61,22 +61,22 @@ Product 1 is available in store1 with price 70 and store3 with price 80. The pro
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 72 ms  
-**Memory:** 0B  
-**Submitted:** 2026-08-27T09:50:42.002Z  
+**Runtime:** 568 ms (beats 60.75%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-08-27T09:52:02.108Z  
 
 ```sql
 # Write your MySQL query statement below
-SELECT product_id,store1 As store FROM Products WHERE store1 is NOT NULL
+SELECT product_id,'store1' As store ,store1 As price FROM Products WHERE store1 is NOT NULL
 
 UNION ALL
 
-SELECT product_id,store2 As store FROM Products WHERE store2 is NOT NULL
+SELECT product_id,'store2' As store,store2 As store FROM Products WHERE store2 is NOT NULL
 
 UNION ALL
 
 
-SELECT product_id,store3 As store FROM Products WHERE store3 is NOT NULL
+SELECT product_id,'store3' As store,store3 As store FROM Products WHERE store3 is NOT NULL
 
 ```
 
