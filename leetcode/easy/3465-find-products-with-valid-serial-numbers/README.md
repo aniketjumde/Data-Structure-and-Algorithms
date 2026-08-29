@@ -77,9 +77,9 @@ The result table is ordered by product_id in ascending order.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 112 ms  
-**Memory:** 0B  
-**Submitted:** 2026-08-29T11:44:30.696Z  
+**Runtime:** 463 ms (beats 74.13%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-08-29T11:44:35.896Z  
 
 ```sql
 SELECT product_id, product_name, description
