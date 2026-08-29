@@ -77,9 +77,9 @@ The result table is ordered by product_id in ascending order.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 82 ms  
+**Runtime:** 108 ms  
 **Memory:** 0B  
-**Submitted:** 2026-08-29T11:40:15.188Z  
+**Submitted:** 2026-08-29T11:40:39.943Z  
 
 ```sql
 # Write your MySQL query statement below
