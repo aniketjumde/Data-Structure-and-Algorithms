@@ -52,9 +52,9 @@ The numbers 4 and 5 each appear twice in the array.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-09-02T13:11:51.754Z  
+**Runtime:** 4 ms (beats 16.68%)  
+**Memory:** 46.9 MB (beats 9.20%)  
+**Submitted:** 2026-09-02T13:11:56.201Z  
 
 ```java
 class Solution {
