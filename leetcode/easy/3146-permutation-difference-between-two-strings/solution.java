@@ -2,13 +2,12 @@ class Solution {
     public int findPermutationDifference(String s, String t) {
         
         int sum=0;
-        for(char ch:s.toCharArray())
+        for(int i=0;i<s.length();i++)
         {
-            int i=0;
+            char ch=s.charAt(i);
             sum+=Math.abs(i-t.indexOf(ch));
-            i++;
+            
         }
-        
         return sum;
     }
 }
