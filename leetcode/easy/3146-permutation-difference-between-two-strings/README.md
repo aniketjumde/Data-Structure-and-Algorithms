@@ -48,22 +48,21 @@ That is, the permutation difference between `s` and `t` is equal to `|0 - 1| + |
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.2 MB  
-**Submitted:** 2026-09-02T13:16:29.363Z  
+**Runtime:** 1 ms (beats 100.00%)  
+**Memory:** 43.8 MB (beats 86.42%)  
+**Submitted:** 2026-09-02T13:19:08.199Z  
 
 ```java
 class Solution {
     public int findPermutationDifference(String s, String t) {
         
         int sum=0;
-        for(char ch:s.toCharArray())
+        for(int i=0;i<s.length();i++)
         {
-            int i=0;
+            char ch=s.charAt(i);
             sum+=Math.abs(i-t.indexOf(ch));
-            i++;
+            
         }
-        
         return sum;
     }
 }
