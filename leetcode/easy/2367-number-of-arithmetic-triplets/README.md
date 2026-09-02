@@ -48,9 +48,9 @@ Explanation:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 18 ms (beats 23.49%)  
-**Memory:** 43 MB (beats 86.87%)  
-**Submitted:** 2026-09-02T13:44:13.801Z  
+**Runtime:** 2 ms (beats 86.16%)  
+**Memory:** 43.7 MB (beats 12.03%)  
+**Submitted:** 2026-09-02T13:46:38.263Z  
 
 ```java
 class Solution {
@@ -58,23 +58,21 @@ class Solution {
     {
         int count=0;
 
+        Set<Integer> set=new HashSet<>();
 
-        for(int i=0;i<nums.length;i++)
+        for(int num:nums)
         {
-            for(int j=i+1;j<nums.length;j++)
-            {
-                int ans=nums[j]-nums[i];
+            set.add(num);
+        }
 
-                for(int k=j+1;k<nums.length;k++)
-                {
-                    int result=nums[k]-nums[j];
-                    if( ans==diff && result==diff )
-                    {
-                        count++;
-                    }
-                }
+        for(int num:nums)
+        {
+            if(set.contains(num+diff) && set.contains(num+diff*2))
+            {
+                count++;
             }
         }
+
 
         return count;    
     }
