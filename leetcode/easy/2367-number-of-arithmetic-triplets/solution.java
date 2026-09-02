@@ -3,23 +3,21 @@ class Solution {
     {
         int count=0;
 
+        Set<Integer> set=new HashSet<>();
 
-        for(int i=0;i<nums.length;i++)
+        for(int num:nums)
         {
-            for(int j=i+1;j<nums.length;j++)
-            {
-                int ans=nums[j]-nums[i];
+            set.add(num);
+        }
 
-                for(int k=j+1;k<nums.length;k++)
-                {
-                    int result=nums[k]-nums[j];
-                    if( ans==diff && result==diff )
-                    {
-                        count++;
-                    }
-                }
+        for(int num:nums)
+        {
+            if(set.contains(num+diff) && set.contains(num+diff*2))
+            {
+                count++;
             }
         }
+
 
         return count;    
     }
