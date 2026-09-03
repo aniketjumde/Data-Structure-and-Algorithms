@@ -42,23 +42,24 @@ No even integer appears exactly once, so return -1.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-09-03T13:54:32.070Z  
+**Runtime:** 2 ms (beats 61.94%)  
+**Memory:** 46.4 MB (beats 33.95%)  
+**Submitted:** 2026-09-03T13:55:40.742Z  
 
 ```java
 class Solution {
     public int firstUniqueEven(int[] nums) 
     {
-        HashMap<Integer,Integer> map=new HashMap<>();
-        for(int num:nums)
-        {
-            if(num%2==0)
-            {
-                map.put(num,map.getOrDefault(num,0)+1);
-            }
-        }   
+        HashMap<Integer, Integer> map = new HashMap<>();
 
+        // Step 1: Count frequency of even numbers
+        for (int num : nums) {
+            if (num % 2 == 0) {
+                map.put(num, map.getOrDefault(num, 0) + 1);
+            }
+        }
+
+        // Step 2: Find the first unique even number
         for (int num : nums) {
             if (num % 2 == 0 && map.get(num) == 1) {
                 return num;
