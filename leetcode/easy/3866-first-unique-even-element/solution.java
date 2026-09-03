@@ -10,14 +10,12 @@ class Solution {
             }
         }   
 
-        int count=0;
-        for(Map.Entry<Integer,Integer> entry:map.entrySet())
-        {
-            if(entry.getValue()==1 )
-            {
-                count++;
+        for (int num : nums) {
+            if (num % 2 == 0 && map.get(num) == 1) {
+                return num;
             }
         }
-        return count;
+
+        return -1;
     }
 }
