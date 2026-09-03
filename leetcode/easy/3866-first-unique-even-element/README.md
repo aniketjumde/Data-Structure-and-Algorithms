@@ -43,8 +43,8 @@ No even integer appears exactly once, so return -1.
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.1 MB  
-**Submitted:** 2026-09-03T13:47:38.495Z  
+**Memory:** 42.7 MB  
+**Submitted:** 2026-09-03T13:54:32.070Z  
 
 ```java
 class Solution {
@@ -59,15 +59,13 @@ class Solution {
             }
         }   
 
-        int count=0;
-        for(Map.Entry<Integer,Integer> entry:map.entrySet())
-        {
-            if(entry.getValue()==1 )
-            {
-                count++;
+        for (int num : nums) {
+            if (num % 2 == 0 && map.get(num) == 1) {
+                return num;
             }
         }
-        return count;
+
+        return -1;
     }
 }
 ```
