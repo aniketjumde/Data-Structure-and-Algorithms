@@ -63,9 +63,9 @@ The rest of the employees get a 100% bonus.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 86 ms  
-**Memory:** 0B  
-**Submitted:** 2026-08-27T12:22:19.211Z  
+**Runtime:** 677 ms (beats 46.44%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-09-30T07:18:57.878Z  
 
 ```sql
 # Write your MySQL query statement below
