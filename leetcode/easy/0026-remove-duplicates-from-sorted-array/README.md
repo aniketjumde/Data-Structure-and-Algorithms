@@ -62,21 +62,21 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 46.9 MB (beats 23.89%)  
-**Submitted:** 2026-10-02T07:45:42.013Z  
+**Runtime:** 0 ms  
+**Memory:** 43.2 MB  
+**Submitted:** 2026-10-02T08:15:01.967Z  
 
 ```java
 class Solution {
     public int removeDuplicates(int[] arr) 
     {
-        int i=0;
+        int i=1;
         for(int j=1;j<arr.length;j++)
         {
-            if(arr[i]!=arr[j])
+            if(arr[j]!=arr[i-1])
             {
-                i++;
                 arr[i]=arr[j];
+                i++;
             }
         }
 
