@@ -63,8 +63,8 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 43.2 MB  
-**Submitted:** 2026-10-02T08:15:01.967Z  
+**Memory:** 43 MB  
+**Submitted:** 2026-10-02T08:15:37.052Z  
 
 ```java
 class Solution {
@@ -80,7 +80,7 @@ class Solution {
             }
         }
 
-        return i+1;
+        return i;
     
     }
 }
