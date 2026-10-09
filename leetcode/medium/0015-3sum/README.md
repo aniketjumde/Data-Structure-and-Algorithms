@@ -52,9 +52,9 @@ Explanation: The only possible triplet sums up to 0.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 43 MB  
-**Submitted:** 2026-10-01T07:54:35.249Z  
+**Runtime:** 31 ms (beats 80.34%)  
+**Memory:** 59.4 MB (beats 32.47%)  
+**Submitted:** 2026-10-09T10:00:53.628Z  
 
 ```java
 import java.util.*;
@@ -63,21 +63,42 @@ class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
 
         List<List<Integer>> result = new ArrayList<>();
-       
-        for(int i=0;i<nums.length;i++)
-        {
-            for(int j=i+1;j<nums.length;j++)
-            {
-                for(int k=j+1;k<nums.length;k++)
-                {
+               Arrays.sort(nums);
 
-                    if(nums[i]+nums[j]+nums[k]==0)
-                    {
-                        List<Integer> sumIndex=Arrays.asList(nums[i],nums[j],nums[k]);
-                        result.add(sumIndex);
+        for(int i=0;i<nums.length-2;i++)
+        {
+            if(i>0 && nums[i]==nums[i-1]) continue;
+
+            int j=i+1;
+            int k=nums.length-1;
+            while(j<k)
+            {
+                int sum=nums[i]+nums[j]+nums[k];
+
+                if(sum<0)
+                {
+                    j++;
+                }
+                else if(sum>0)
+                {
+                    k--;
+                }
+                else
+                {
+                    List<Integer> find=Arrays.asList(nums[i],nums[j],nums[k]);
+                    result.add(find);
+                    k--;
+                    j++;
+
+                    // Skip duplicate values for j
+                    while (j < k && nums[j] == nums[j - 1]) {
+                        j++;
                     }
 
-                    
+                    // Skip duplicate values for k
+                    while (j < k && nums[k] == nums[k + 1]) {
+                        k--;
+                    }
                 }
             }
         }
