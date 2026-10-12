@@ -63,9 +63,9 @@ So, the total sum is `4 + 4 + 4 = 12`.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.2 MB  
-**Submitted:** 2026-10-12T13:34:01.949Z  
+**Runtime:** 3 ms (beats 52.02%)  
+**Memory:** 44.5 MB (beats 32.25%)  
+**Submitted:** 2026-10-12T13:34:15.374Z  
 
 ```java
 class Solution {
