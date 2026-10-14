@@ -58,7 +58,7 @@ NO
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T05:00:12.091Z  
+**Submitted:** 2026-10-14T04:59:35.624Z  
 
 ```java
 import java.util.*;
@@ -80,7 +80,7 @@ class Codechef
 		    int y=sc.nextInt();
 		    int z=sc.nextInt();
 		    
-		    if(x==w|| y==w || z==w || x+y==w || x+z==w || y+z==w || x+y+z==w)
+		    if(x==w|| y==w || z==w || x+y==w || x+z==w || y+z==w)
 		    {
 		        System.out.println("YES");
 		    }
