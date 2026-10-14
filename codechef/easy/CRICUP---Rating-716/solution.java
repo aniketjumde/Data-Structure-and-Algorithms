@@ -16,7 +16,7 @@ class Codechef
             int Y=sc.nextInt();
             int Z=sc.nextInt();
             
-            int diff=Math.abs(X-Y);
+            int diff=X-Y;
             if(diff<=Z)
             {
                 System.out.println("YES");
