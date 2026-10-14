@@ -17,7 +17,7 @@ class Codechef
 		    int y=sc.nextInt();
 		    int z=sc.nextInt();
 		    
-		    if(x==w|| y==w || z==w || x+y==w || x+z==w || y+z==w || x+y+z==w)
+		    if(x==w|| y==w || z==w || x+y==w || x+z==w || y+z==w)
 		    {
 		        System.out.println("YES");
 		    }
