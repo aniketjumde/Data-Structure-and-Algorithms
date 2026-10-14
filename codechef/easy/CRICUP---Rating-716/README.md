@@ -51,7 +51,7 @@ YES
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T09:07:40.563Z  
+**Submitted:** 2026-10-14T09:10:03.452Z  
 
 ```java
 import java.util.*;
@@ -72,7 +72,7 @@ class Codechef
             int Y=sc.nextInt();
             int Z=sc.nextInt();
             
-            int diff=X-Y;
+            int diff=Math.abs(X-Y);
             if(diff<=Z)
             {
                 System.out.println("YES");
