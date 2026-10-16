@@ -12,27 +12,20 @@ class Codechef
         
         while(T-->0)
         {
-            int A=sc.nextInt();
-            int B=sc.nextInt();
-            int C=sc.nextInt();
-
+            int N=sc.nextInt();
+            int X=sc.nextInt();
+            int P=sc.nextInt();
             
-            int largest = Math.max(A, Math.max(B, C));
-            int secondLargest = Integer.MIN_VALUE;
-
-            if (A < largest) {
-                secondLargest = Math.max(secondLargest, A);
+            int TMakrs=X*3-(N-2);
+            
+            if(TMakrs==P)
+            {
+                System.out.println("PASS");
             }
-
-            if (B < largest) {
-                secondLargest = Math.max(secondLargest, B);
+            else
+            {
+                System.out.println("FAIL");
             }
-
-            if (C < largest) {
-                secondLargest = Math.max(secondLargest, C);
-            }
-
-            System.out.println(secondLargest);
         }
 	}
 }
