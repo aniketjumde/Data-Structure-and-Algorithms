@@ -18,7 +18,7 @@ class Codechef
             
             int TMakrs=X*3-(N-2);
             
-            if(TMakrs==P)
+            if(TMakrs>=P)
             {
                 System.out.println("PASS");
             }
