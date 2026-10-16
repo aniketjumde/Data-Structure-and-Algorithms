@@ -58,7 +58,7 @@ FAIL
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-16T07:47:58.360Z  
+**Submitted:** 2026-10-16T07:49:09.598Z  
 
 ```java
 import java.util.*;
@@ -81,7 +81,7 @@ class Codechef
             
             int TMakrs=X*3-(N-2);
             
-            if(TMakrs==P)
+            if(TMakrs>=P)
             {
                 System.out.println("PASS");
             }
